@@ -1,13 +1,5 @@
-
 const App = () => {
-  return (
-    <div>
-      <Inline/>
-      <Plain/>
-      <ModuleCSS/>
-      <STYLEOBJECT/>
-    </div>
-  );
+  return <div></div>;
 };
 
 export default App;
