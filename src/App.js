@@ -1,13 +1,16 @@
-import FirstComponent from "./content/04. props/FirstComponent";
-import SecondComponent from "./content/04. props/SecondComponent";
-
-const something = "Hi";
+import FirstComponent from "./content/06. props and events/FirstComponent";
 
 const App = () => {
+  const clickHandler = () => {
+    let a = 6;
+    let b = 9;
+    console.log(a + b);
+    console.log("clicked");
+  };
+  let buttonValue = "click";
   return (
     <div>
-      <FirstComponent value={something} />
-      <SecondComponent value={something} />
+      <FirstComponent clickHandler={clickHandler} value={buttonValue} />
     </div>
   );
 };
